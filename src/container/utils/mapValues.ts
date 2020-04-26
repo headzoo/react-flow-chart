@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export default function mapValues<
   Obj extends object,
   Res extends { [key in keyof Obj]: any }
