@@ -124,6 +124,7 @@ export const FlowChart = (props: IFlowChartProps) => {
   const matrix = config.smartRouting ? getMatrix(chart.offset, Object.values(nodesInView.map((nodeId) => nodes[nodeId]))) : undefined
 
   const linksInView = Object.keys(links).filter((linkId) => {
+    return true;
     const from = links[linkId].from
     const to = links[linkId].to
 
