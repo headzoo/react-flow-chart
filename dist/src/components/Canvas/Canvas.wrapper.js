@@ -86,7 +86,7 @@ var CanvasWrapper = /** @class */ (function (_super) {
                     React.createElement(react_zoom_pan_pinch_1.TransformComponent, null,
                         React.createElement(ComponentInner, { config: config, children: children, onClick: onCanvasClick, tabIndex: 0, onKeyDown: function (e) {
                                 // delete or backspace keys
-                                if (e.keyCode === 46 || e.keyCode === 8) {
+                                if (e.keyCode === 46) {
                                     onDeleteKey({ config: config });
                                 }
                             }, onDrop: function (e) {
