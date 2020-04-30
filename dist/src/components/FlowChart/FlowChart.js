@@ -33,6 +33,7 @@ exports.FlowChart = function (props) {
     });
     var matrix = config.smartRouting ? grid_1.getMatrix(chart.offset, Object.values(nodesInView.map(function (nodeId) { return nodes[nodeId]; }))) : undefined;
     var linksInView = Object.keys(links).filter(function (linkId) {
+        return true;
         var from = links[linkId].from;
         var to = links[linkId].to;
         return (!to.nodeId ||
